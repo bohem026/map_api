@@ -26,6 +26,7 @@
         <li data-lat="37.5323264" data-lng="126.9907031">용산구청</li>
         <li data-lat="37.6540782" data-lng="127.0566045">노원구청</li>
       </ul>
+      <!-- 지도를 표시할 div 입니다 -->
       <div id="map" class="map"></div>
     </div>
 
@@ -41,7 +42,7 @@
           함수 myMap 실행
       */
       locations.forEach((location) => {
-        location.addEventListener("click", (e) => {
+        location.addEventListener("click", () => {
           // let lat = location.getAttribute('data-lat');
           let lat = location.dataset.lat;
           let lng = location.dataset.lng;
